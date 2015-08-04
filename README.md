@@ -1,23 +1,42 @@
-# Minimal Mistakes
+# OUR MISSION:
 
-**[Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes)** is a two column responsive Jekyll theme perfect for powering your GitHub hosted blog.
+Advocating for the rights of nonhuman animals.
 
-## Minimal Mistakes is all about:
+The Montreal Vegan Collective works to raise public awareness about the plight of nonhuman animals as property. We demonstrate that speciesism, reinforced by their legal status as property, is the root cause of nonhuman animal exploitation. We call for the unequivocal abolition of all animal use through the adoption of a vegan lifestyle and the recognition that all sentient beings deserve at least one right: the right not to be property.
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
+Veganism is our moral baseline. Abolition is our goal.
 
-![screenshot of Minimal Mistakes theme](http://mmistakes.github.io/minimal-mistakes/images/mm-theme-post-600.jpg)
+## We work towards fulfilling our mission by:
 
-See a [live version of Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes/) hosted on GitHub.
+  * Educating the public about speciesism and veganism through leafleting, information stalls, lectures, presentations, workshops, working with the media, and online advocacy.
+  * Lending support, as far as possible and practicable, to no-kill rescues and shelters that promote veganism, and who are otherwise not in conflict with our mission.
+  * Further educating other vegans about animal rights theory through regular meetings, study groups, reading groups, or other agreed upon means.
+  * Working with other social justice movements towards an overall goal of justice and a non-violent world for all sentient beings. For us to mature as a movement, it is important that we embrace intersectionality.
 
-## Getting Started
+## Our Values:
 
-Minimal Mistakes takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
+### Abolition
 
-To learn how to install and use this theme check out the [Setup Guide](http://mmistakes.github.io/minimal-mistakes/theme-setup/) for more information.
+We are an abolitionist group. Our goal is the abolition of the use of nonhuman animals, and as such we do not support welfare reforms, changes in the way other animals are exploited, or single issue campaigns. Reforms in treatment are likely to happen when we advocate for abolition, but abolition will never happen unless we want it to.
+
+### Human and Nonhuman Rights
+
+We will not engage in any form of advocacy at the expense of others, be it other humans (through sexism, heterosexism, ageism, ableism, etc), or other species of nonhuman animals (such as by promoting ‘smart’ animals over ‘dumb’ animals, mammals over reptiles or insects, etc).
+
+Everyone is welcome to participate in the collective, regardless of gender, sex, sexual orientation, race, religion, age, physical or mental ability. We only ask that you be committed to veganism and wish to contribute towards our mission.
+
+Veganism is the refusal to contribute to the exploitation of others. It is accomplished by choosing a varied plant-based diet, shoes and clothing free from animal products and fairly traded when possible, using cosmetics and household products that are free of animal ingredients and not tested on other animals, and entertaining ourselves without exploiting others.
+
+We support the struggles of our fellow humans in all other matters of social justice and will endeavour to lend our support to such causes whenever and wherever possible.
+
+### Non Violence
+
+We are committed to nonviolence in all of our actions and undertakings. We recognise that genuine peace can only come from peaceful actions.
+
+### Accessibility
+
+All material produced by or for the collective will be made available in both French and English.
+
+All externally focused material will be written for a 6th grade reading level to maximise the audience that we might reach.
+
+All material, unless we are restricted otherwise, should be released under a Creative Commons, attribution-NonCommercial-ShareAlike or equivalent license.
