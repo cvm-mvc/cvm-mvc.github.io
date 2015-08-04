@@ -1,0 +1,61 @@
+# Site wide configuration
+
+title:            Collectif Végane de Montréal
+locale:           fr_CA
+url:              
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+
+# Site owner
+owner:
+  name: "Collectif Végane de Montréal"
+  avatar: bio-photo.png
+  bio: "Le Collectif Végan de Montréal est une organisation non-hiérarchique composer de divers individus qui se sont réunis pour se concentrer sur l’éducation végane abolitionniste et de sensibilisation à Montréal et ailleurs au Québec."
+  email:
+  disqus-shortname:
+  twitter: #username
+  facebook: "203203106419182"
+  google:
+    plus: #username
+    analytics: "UA-28228279-1"
+    verify: "_A-bsYxqytaWxnmUd34Gv4azOdlDQsNQpr1dZmWM8uo"
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: cvm-mvc
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

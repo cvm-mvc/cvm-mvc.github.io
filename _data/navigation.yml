@@ -1,0 +1,16 @@
+# Site navigation links
+
+- title: Accueil
+  url: /fr/accueil/
+
+- title: Pourquoi végane?
+  url: /fr/pourquoi-vegane/
+
+- title: Devenir végan(e)?
+  url: /fr/devenir-vegan/
+
+- title: Resources
+  url: /fr/resources/
+
+- title: À propos de nous
+  url: /fr/a-propos-de-nous/
