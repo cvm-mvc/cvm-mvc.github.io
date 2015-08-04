@@ -1,4 +1,7 @@
-# The Jekyll Template License:
+# The Jekyll Template:
+
+This site began with a modification of the [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) 
+theme for Jekyll.
 
 ## The MIT License (MIT)
 
