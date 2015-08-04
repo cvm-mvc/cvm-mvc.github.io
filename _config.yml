@@ -4,7 +4,6 @@ title:            Collectif Végane de Montréal
 locale:           fr_CA
 url:              
 
-
 # Jekyll configuration
 
 permalink:   /:categories/:title/
@@ -22,7 +21,6 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   use_coderay: false
-
 
 # Site owner
 owner:
@@ -56,6 +54,21 @@ owner:
   weibo: #username
   flickr: #username
   codepen: #username
+
+# Configure multilingual settings
+defaults:
+  -
+    scope:
+      path: _posts/en
+    values:
+    layout: page
+    lang: en
+  -
+    scope:
+      path: _posts/fr
+    values:
+    layout: page
+    lang: fr
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
