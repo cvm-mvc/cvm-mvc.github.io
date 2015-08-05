@@ -61,14 +61,15 @@ defaults:
     scope:
       path: _posts/en
     values:
-    layout: page
-    lang: en
+      layout: page
+      lang: en
   -
     scope:
       path: _posts/fr
     values:
-    layout: page
-    lang: fr
+      layout: page
+      lang: fr
+
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
