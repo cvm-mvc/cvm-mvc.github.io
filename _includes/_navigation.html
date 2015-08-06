@@ -1,26 +1,19 @@
 <div class="navigation-wrapper">
-	<div class="site-name">
-		<a href="{{ site.url }}/">{{ site.title }}</a>
-	</div><!-- /.site-name -->
 	<div class="top-navigation">
-		<nav role="navigation" id="site-nav" class="nav">
-		    <ul>
-                        {% for menu in site.data.navigation.t[page.lang] %}
-    			<li><a href="{{menu[1].url}}">{{menu[1].title}}</a></li>
-                        {% endfor %}
-		    </ul>
-		</nav>
-	</div><!-- /.top-navigation -->
-        <div class="lang-selection">
-                <nav role="navigation" id="language-selection" class="nav">
-   		{% assign posts=site.posts | where:"name", page.name | sort: 'path' %}
+	    <nav role="navigation" id="site-nav" class="nav">
 		<ul>
-		{% for post in posts %}
-   			 <li>
-       				 <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
-    			</li>
-		{% endfor %}
-		</ul>
- 		</nav>
+                    {% for menu in site.data.navigation.t[page.lang] %}
+    	            <li><a href="{{menu[1].url}}">{{menu[1].title}}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+        <div class="lang-selection">
+            {% assign posts=site.posts | where:"name", page.name | sort: 'path' %}
+            <ul>
+            {% for post in posts %}
+                <li class="lang"><a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a></li>
+	    {% endfor %}
+            </ul>
         </div><!-- /.language-selection -->
 </div><!-- /.navigation-wrapper -->
