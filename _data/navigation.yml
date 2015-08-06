@@ -1,16 +1,34 @@
 # Site navigation links
-
-- title: Accueil
-  url: /fr/accueil/
-
-- title: Pourquoi végane?
-  url: /fr/pourquoi-vegane/
-
-- title: Devenir végan(e)?
-  url: /fr/devenir-vegan/
-
-- title: Resources
-  url: /fr/resources/
-
-- title: À propos de nous
-  url: /fr/a-propos-de-nous/
+t:
+  en:
+    home:
+      title: "Home"
+      url: "/"
+    why:
+      title: "Why Vegan?"
+      url: "/why/"
+    become:
+      title: "Become Vegan"
+      url: "/become/"
+    resources:
+      title: "Resources"
+      url: "/resources-en/"
+    about:
+      title: "About"
+      url: "/about/"
+  fr:
+    home:
+      title: "Accueil"
+      url: "/"
+    why: 
+      title: "Pourquoi végane?"
+      url: "/pourquoi-vegane/"
+    become: 
+      title: "Devenir végan(e)?"
+      url: "/devenir-vegan/"
+    resources:
+      title: "Resources"
+      url: "/resources/"
+    about:
+      title: "À propos"
+      url: "/a-propos/"
