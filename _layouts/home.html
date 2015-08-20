@@ -5,6 +5,60 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 {% include _head.html %}
+<style>
+#centeredmenu {
+   float:left;
+   width:100%;
+   background:#fff;
+   border-bottom:4px solid #000;
+   overflow:hidden;
+   position:relative;
+}
+
+#centeredmenu ul {
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+}
+
+#centeredmenu ul li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:50%;
+}
+
+#centeredmenu ul li a {
+   
+   display:block;
+   margin:0 0 0 1px;
+   padding:3px 10px;
+   background:#ddd;
+   color:#000;
+   text-decoration:none;
+   line-height:1.3em;
+}
+
+#centeredmenu ul li a:hover {
+   background:#369;
+   color:#fff;
+}
+
+#centeredmenu ul li a.active,
+#centeredmenu ul li a.active:hover {
+   color:#fff;
+   background:#000;
+   font-weight:bold;
+}
+</style>
 </head>
 
 <body class="home">
@@ -14,7 +68,7 @@
 {% include _navigation.html %}
 
 {% if page.image.feature %}
-  <div class="image-wrap">
+  <div class="image-wrap" style="position: relative;">
   <img src=
     {% if page.image.feature contains 'http' %}
       "{{ page.image.feature }}"
@@ -23,29 +77,21 @@
     {% endif %}
   alt="{{ page.title }} feature image">
   {% if page.image.credit %}
-    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+    <span class="image-credit">Photo: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
   {% endif %}
+  <div style="position: absolute; top: 200px;">
+    <h1>INSERT SITE TITLE</h1>
+    <nav id="centeredmenu">
+        <ul>
+            <li><a href="/fr/">Français</a></li>
+            <li><a href="/en/">English</a></li>
+        </ul>
+    </nav>
+</div>
+
   </div><!-- /.image-wrap -->
 {% endif %}
 
-<div id="main" role="main">
-  <div class="article-author-side">
-    {% include _author-bio.html %}
-  </div>
-  <div id="index">
-    <h3><a href="{{ site.url}}/posts/">Recent Posts</a></h3>
-    {% for post in site.posts limit:5 %}
-    <article>
-      {% if post.link %}
-        <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
-      {% else %}
-        <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-      {% endif %}
-    </article>
-    {% endfor %}
-  </div><!-- /#index -->
-</div><!-- /#main -->
 
 <div class="footer-wrap">
   <footer>
