@@ -3,7 +3,7 @@ t:
   en:
     home:
       title: "Home"
-      url: "/"
+      url: "/en/"
     why:
       title: "Why Vegan?"
       url: "/why/"
@@ -19,7 +19,7 @@ t:
   fr:
     home:
       title: "Accueil"
-      url: "/"
+      url: "/fr/"
     why: 
       title: "Pourquoi végane?"
       url: "/pourquoi-vegane/"
