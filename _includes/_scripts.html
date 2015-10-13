@@ -17,6 +17,22 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+
+<!-- Language selection cookies. -->
+<script type="text/javascript" src="{{ site.url }}/assets/js/vendor/js.cookie.js"></script>
+<script>
+  $(function () {
+
+    $('#set_english_button').click(function () {
+      Cookies.set('default_page', 'en', { expires: 999 });
+    });
+
+    $('#set_french_button').click(function () {
+      Cookies.set('default_page', 'fr', { expires: 999 });
+    });
+  });
+</script>
+<!-- end language selection cookies. -->
 {% endif %}
 {% if page.comments %}
   {% include _disqus_comments.html %}

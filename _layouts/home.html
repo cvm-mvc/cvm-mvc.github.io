@@ -6,24 +6,31 @@
 <head>
 {% include _head.html %}
 <style>
+.center {
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    width: 100%;
+}
+
 #centeredmenu {
-   float:left;
-   width:100%;
-   background:#fff;
-   border-bottom:4px solid #000;
-   overflow:hidden;
-   position:relative;
+    float: left;
+    width: 100%;
+    margin: auto;
+/*    background: #fff;*/
+    overflow: hidden;
+    position: relative;
 }
 
 #centeredmenu ul {
-   clear:left;
-   float:left;
-   list-style:none;
-   margin:0;
-   padding:0;
-   position:relative;
-   left:50%;
-   text-align:center;
+   clear: left;
+   float: left;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   left: 50%;
+   text-align: center;
 }
 
 #centeredmenu ul li {
@@ -31,32 +38,34 @@
    float:left;
    list-style:none;
    margin:0;
-   padding:0;
+   padding:10px;
    position:relative;
    right:50%;
 }
 
 #centeredmenu ul li a {
-   
-   display:block;
-   margin:0 0 0 1px;
-   padding:3px 10px;
-   background:#ddd;
-   color:#000;
-   text-decoration:none;
-   line-height:1.3em;
+    display:block;
+    margin:0 0 0 1px;
+    padding:3px 15px;
+    background-color: rgba(221, 221, 221, 0.5);
+    color:#000;
+    text-decoration:none;
+    line-height:1.3em;
+    font-size: 1.5em;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border-radius: 20px;
 }
 
 #centeredmenu ul li a:hover {
-   background:#369;
-   color:#fff;
+   background: #369;
+   color: #fff;
 }
 
 #centeredmenu ul li a.active,
 #centeredmenu ul li a.active:hover {
-   color:#fff;
-   background:#000;
-   font-weight:bold;
+   color: #fff;
+/*   background:#000;*/
+   font-weight: bold;
 }
 </style>
 </head>
@@ -68,7 +77,7 @@
 {% include _navigation.html %}
 
 {% if page.image.feature %}
-  <div class="image-wrap" style="position: relative;">
+  <div class="image-wrap" style="position: relative; float: left;">
   <img src=
     {% if page.image.feature contains 'http' %}
       "{{ page.image.feature }}"
@@ -79,12 +88,13 @@
   {% if page.image.credit %}
     <span class="image-credit">Photo: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
   {% endif %}
-  <div style="position: absolute; top: 200px;">
-    <h1>INSERT SITE TITLE</h1>
+  <!--<div style="position: absolute; top: 200px;">-->
+  <div class="center">
+    <h1 style="color: white; font-size: 3em;">{{site.title}}</h1>
     <nav id="centeredmenu">
         <ul>
-            <li><a href="/fr/">Français</a></li>
-            <li><a href="/en/">English</a></li>
+            <li><a href="/fr/" id="set_french_button">Français</a></li>
+            <li><a href="/en/" id="set_english_button">English</a></li>
         </ul>
     </nav>
 </div>
@@ -100,6 +110,16 @@
 </div><!-- /.footer-wrap -->
 
 {% include _scripts.html %}
+
+<script>
+    var url = "{{ site.url }}";
+
+    if (Cookies.get('default_page') != null) {
+      if (window.location.href != url + '/' + Cookies.get('default_page')) {
+          window.location.href = url + '/' + Cookies.get('default_page');
+      }
+    }
+</script>
 
 </body>
 </html>
